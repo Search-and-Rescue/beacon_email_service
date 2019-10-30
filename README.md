@@ -71,6 +71,8 @@ query {
 
 * Sinatra
 * Ruby 2.4.9
+* ActionMailer
+* SendGrid API
 * PostgresQL
 
 
