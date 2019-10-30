@@ -1,6 +1,8 @@
+### Beacon Email Service
+
 ## Description
 
-This is Beacon's email service. Tasked with fetching information for users who have not checked in on time, this service alerts the user's emergency contact and emails them information associated with the user's trip. The service runs on a loop in order to reach out to any trips that may be active after their notification time.
+Tasked with fetching information for users who have not checked in on time, this service alerts the user's emergency contact and emails them information associated with the user's trip. The service runs on a loop in order to reach out to any trips that may be active after their notification time.
 
 
 ## API Fetch Call
