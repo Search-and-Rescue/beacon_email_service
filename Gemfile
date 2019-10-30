@@ -9,6 +9,7 @@ gem "pg"
 gem "activerecord"
 gem "sinatra-activerecord"
 gem "figaro"
+gem "actionmailer"
 
 group :test do
   gem "rspec"
