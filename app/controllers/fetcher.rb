@@ -1,42 +1,52 @@
 require 'faraday'
+require 'pry'
+require 'sinatra'
 class Fetcher
   def get_trips
     query = (
-        %(query{
-        activeTrips{
+      %({
+      activeTrips{
+        id
+        name
+        startingPoint
+        startDate
+        startTime
+        endingPoint
+        endDate
+        endTime
+        notificationDate
+        notificationTime
+        emergencyContacts{
           name
-          startingPoint
-          startDate
-          startTime
-          endingPoint
-          endDate
-          endTime
-          notificationDate
-          notificationTime
-          tripGears{
-            comments
-            gear{
-              itemName
-            }
-          }
-          user{
-            name
-            emergencyContacts{
-              name
-              phone
-              email
-            }
-            vehicles{
-              year
-              make
-              model
-              color
-              licensePlate
-              state
-            }
+          phone
+          email
+        }
+        tripGears{
+          comments
+          gear{
+            itemName
           }
         }
-      })
+        user{
+          name
+          birthDate
+          allergies
+          weight
+          height
+          hairColor
+          cosarCard
+          experienceLevel
+        }
+        vehicle{
+          make
+          model
+          year
+          color
+          licensePlate
+          state
+        }
+      }
+    })
     )
     get_json("?query=#{query}")[:data][:activeTrips]
   end
