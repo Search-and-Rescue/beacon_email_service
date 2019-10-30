@@ -69,8 +69,8 @@ query {
 
 ## Tech Stack
 
-Sinatra
-Ruby 2.4.9
-PostgresQL
+* Sinatra
+* Ruby 2.4.9
+* PostgresQL
 
 
