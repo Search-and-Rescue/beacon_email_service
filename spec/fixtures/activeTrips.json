@@ -1,0 +1,82 @@
+{
+  "data": {
+    "activeTrips": [
+      {
+        "id": "51",
+        "name": "Keebler-Wilkinson",
+        "startingPoint": "Keebler-Wilkinson",
+        "startDate": "2019-10-28",
+        "startTime": "2019-10-28 12:34:06 UTC",
+        "endingPoint": "Lueilwitz, Torp and Mills",
+        "endDate": "2019-10-29",
+        "endTime": "2019-10-28 18:34:06 UTC",
+        "notificationDate": "2019-10-29",
+        "notificationTime": "2019-10-28 22:34:06 UTC",
+        "emergencyContacts": [
+          {
+            "name": "Audra Koepp",
+            "phone": "(668) 204-6489",
+            "email": "tylerbierwirth@gmail.com"
+          }
+        ],
+        "tripGears": [],
+        "user": {
+          "name": "Ronald Gerlach",
+          "birthDate": "1991-08-08",
+          "allergies": "Lemon",
+          "weight": 98,
+          "height": "5 inches",
+          "hairColor": "orange",
+          "cosarCard": true,
+          "experienceLevel": "beginner"
+        },
+        "vehicle": {
+          "make": "Lincoln",
+          "model": "Verano",
+          "year": 2013,
+          "color": "White",
+          "licensePlate": "WDV-8272",
+          "state": "DE"
+        }
+      },
+      {
+        "id": "52",
+        "name": "Moen, Cole and Hettinger",
+        "startingPoint": "Moen, Cole and Hettinger",
+        "startDate": "2019-10-28",
+        "startTime": "2019-10-28 12:34:06 UTC",
+        "endingPoint": "Cartwright-Mann",
+        "endDate": "2019-10-29",
+        "endTime": "2019-10-28 18:34:06 UTC",
+        "notificationDate": "2019-10-29",
+        "notificationTime": "2019-10-28 22:34:06 UTC",
+        "emergencyContacts": [
+          {
+            "name": "Theron Bogan",
+            "phone": "487.997.2198",
+            "email": "tylerbierwirth@gmail.com"
+          }
+        ],
+        "tripGears": [],
+        "user": {
+          "name": "Alvin Hills",
+          "birthDate": "1991-02-20",
+          "allergies": "Papaya",
+          "weight": 168,
+          "height": "7 inches",
+          "hairColor": "cyan",
+          "cosarCard": false,
+          "experienceLevel": "moderate"
+        },
+        "vehicle": {
+          "make": "Toyota",
+          "model": "Fiesta",
+          "year": 2016,
+          "color": "Black",
+          "licensePlate": "AGM-1035",
+          "state": "SC"
+        }
+      }
+    ]
+  }
+}

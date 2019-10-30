@@ -14,3 +14,12 @@ describe "Fetch Trips" do
     expect(results[0][:user]).to have_key(:name)
   end
 end
+
+RSpec.describe Mailer, type: :mailer do
+  it 'can notify emergency contacts' do
+    json = File.read('./spec/fixtures/activeTrips.json')
+    trip = JSON.parse(json, symbolize_names: true)[:data][:activeTrips][0]
+    email = Mailer.notify(trip)
+    expect(email.to).to eq([trip[:emergencyContacts][0][:email]])
+  end
+end
