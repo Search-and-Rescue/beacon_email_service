@@ -1,4 +1,4 @@
-### Beacon Email Service
+# Beacon Email Service
 
 ## Description
 
