@@ -1,3 +1,4 @@
+require 'dotenv/load'
 configure do
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.raise_delivery_errors = true
