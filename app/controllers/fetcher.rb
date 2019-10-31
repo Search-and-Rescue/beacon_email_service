@@ -16,6 +16,7 @@ class Fetcher
         endTime
         notificationDate
         notificationTime
+        travelingCompanions
         tripGears{
           comments
           gear{
