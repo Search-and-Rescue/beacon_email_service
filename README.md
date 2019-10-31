@@ -77,4 +77,8 @@ query {
 * SendGrid API
 * PostgresQL
 
+### Beacon API Repo
+
+[View Beacon's Backend API Repo Here](https://github.com/Search-and-Rescue/beacon_api)
+
 
