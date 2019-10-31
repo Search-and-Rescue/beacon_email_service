@@ -6,6 +6,7 @@ class Fetcher
     query = (
       %({
         activeTrips{
+        id
         name
         startingPoint
         startDate
