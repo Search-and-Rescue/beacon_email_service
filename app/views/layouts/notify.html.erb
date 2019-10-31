@@ -6,14 +6,24 @@ Here is all the information they recorded about their trip:
 
 Trip starting point: <%= @trip[:startingPoint]%>
 Trip ending point: <%= @trip[:endingPoint]%>
-Trip ending point: <%= @trip[:endingPoint]%>
+
 Number of traveling companions: <%= @trip[:travelingCompanions] %>
 
-Gear: <%= @trip[:tripGears][0] %>
+Gear: <% @trip[:tripGears].each do |gear| %>
+<%= gear[:gear][:itemName] %>
+<%= gear[:comments] %>
+<% end %>
 
 Vehicle description: <%= @trip[:vehicle] %>
 
 Physical description: <%= @trip[:user] %>
 
 Please contact a nearby search and rescue team below:
-<%= @trip[:nearbySarTeams] %>
+<% @trip[:nearbySarTeams].each do |team| %>
+  <%= team[:teamName] %>
+  <%= team[:contact] %>
+  <%= team[:contactNumber] %>
+  <%= team[:city] %>
+  <%= team[:state] %>
+  <%= team[:county] %>
+<% end %>

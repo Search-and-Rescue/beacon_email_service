@@ -1,90 +1,218 @@
 {
-  "data": {
-    "activeTrips": [
-      {
-        "id": "51",
-        "name": "Keebler-Wilkinson",
-        "startingPoint": "Keebler-Wilkinson",
-        "startDate": "2019-10-28",
-        "startTime": "2019-10-28 12:34:06 UTC",
-        "endingPoint": "Lueilwitz, Torp and Mills",
-        "endDate": "2019-10-29",
-        "endTime": "2019-10-28 18:34:06 UTC",
-        "notificationDate": "2019-10-29",
-        "notificationTime": "2019-10-28 22:34:06 UTC",
-        "emergencyContacts": [
-          {
-            "name": "Audra Koepp",
-            "phone": "(668) 204-6489",
-            "email": "tylerbierwirth@gmail.com"
-          }
-        ],
-        "tripGears": [],
-        "user": {
-          "name": "Ronald Gerlach",
-          "birthDate": "1991-08-08",
-          "allergies": "Lemon",
-          "weight": 98,
-          "height": "5 inches",
-          "hairColor": "orange",
-          "cosarCard": true,
-          "experienceLevel": "beginner"
-        },
-        "vehicle": {
-          "make": "Lincoln",
-          "model": "Verano",
-          "year": 2013,
-          "color": "White",
-          "licensePlate": "WDV-8272",
-          "state": "DE"
-        },
-        "nearbySarTeams": {
-          "teamName": "Alamosa Volunteer Search and Rescue",
-          "county": "Alamosa",
-          "contact": "Sheriff's Office",
-          "contactNumber": "719-589-6608",
-          "city": "Alamosa",
-          "state": "CO"
-        }
-      },
-      {
-        "id": "52",
-        "name": "Moen, Cole and Hettinger",
-        "startingPoint": "Moen, Cole and Hettinger",
-        "startDate": "2019-10-28",
-        "startTime": "2019-10-28 12:34:06 UTC",
-        "endingPoint": "Cartwright-Mann",
-        "endDate": "2019-10-29",
-        "endTime": "2019-10-28 18:34:06 UTC",
-        "notificationDate": "2019-10-29",
-        "notificationTime": "2019-10-28 22:34:06 UTC",
-        "emergencyContacts": [
-          {
-            "name": "Theron Bogan",
-            "phone": "487.997.2198",
-            "email": "tylerbierwirth@gmail.com"
-          }
-        ],
-        "tripGears": [],
-        "user": {
-          "name": "Alvin Hills",
-          "birthDate": "1991-02-20",
-          "allergies": "Papaya",
-          "weight": 168,
-          "height": "7 inches",
-          "hairColor": "cyan",
-          "cosarCard": false,
-          "experienceLevel": "moderate"
-        },
-        "vehicle": {
-          "make": "Toyota",
-          "model": "Fiesta",
-          "year": 2016,
-          "color": "Black",
-          "licensePlate": "AGM-1035",
-          "state": "SC"
-        }
-      }
-    ]
-  }
+    "data": {
+        "activeTrips": [
+            {
+                "name": "4 Pass Loop",
+                "startingPoint": "Maroon Snowmass Trailhead",
+                "startDate": "2019-10-30",
+                "startTime": "2019-10-30 15:38:06 UTC",
+                "endingPoint": "Maroon Snowmass Trailhead",
+                "endDate": "2019-10-31",
+                "endTime": "2019-10-30 21:38:06 UTC",
+                "notificationDate": "2019-10-31",
+                "notificationTime": "2019-10-31 01:38:06 UTC",
+                "tripGears": [
+                    {
+                        "comments": "Chuck Norris can't test for equality because he has no equal.",
+                        "gear": {
+                            "itemName": "Lightweight Paper Coat",
+                            "description": "\"It works on my machine\" always holds true for Chuck Norris."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris can unit test an entire application with a single assert.",
+                        "gear": {
+                            "itemName": "Mediocre Concrete Clock",
+                            "description": "Chuck Norris can unit test an entire application with a single assert."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris doesn't need a java compiler, he goes straight to .war",
+                        "gear": {
+                            "itemName": "Fantastic Copper Plate",
+                            "description": "Chuck Norris can recite π. Backwards."
+                        }
+                    },
+                    {
+                        "comments": "There is no need to try catching Chuck Norris' exceptions for recovery; every single throw he does is fatal.",
+                        "gear": {
+                            "itemName": "Small Concrete Hat",
+                            "description": "Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris."
+                        }
+                    },
+                    {
+                        "comments": "There is no Esc key on Chuck Norris' keyboard, because no one escapes Chuck Norris.",
+                        "gear": {
+                            "itemName": "Fantastic Concrete Wallet",
+                            "description": "Chuck Norris doesn't need the cloud to scale his applications, he uses his laptop."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris's first program was kill -9.",
+                        "gear": {
+                            "itemName": "Durable Wool Shoes",
+                            "description": "Chuck Norris is immutable. If something's going to change, it's going to have to be the rest of the universe."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard.",
+                        "gear": {
+                            "itemName": "Sleek Iron Chair",
+                            "description": "Chuck Norris doesn't need an OS."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris doesn't pair program.",
+                        "gear": {
+                            "itemName": "Sleek Iron Shoes",
+                            "description": "Chuck Norris doesn't use web standards as the web will conform to him."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris knows the last digit of PI.",
+                        "gear": {
+                            "itemName": "Ergonomic Bronze Hat",
+                            "description": "When a bug sees Chuck Norris, it flees screaming in terror, and then immediately self-destructs to avoid being roundhouse-kicked."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris can use GOTO as much as he wants to. Telling him otherwise is considered harmful.",
+                        "gear": {
+                            "itemName": "Incredible Concrete Lamp",
+                            "description": "Chuck Norris doesn't need garbage collection because he doesn't call .Dispose(), he calls .DropKick()."
+                        }
+                    },
+                    {
+                        "comments": "Chuck Norris can write multi-threaded applications with a single thread.",
+                        "gear": {
+                            "itemName": "Lightweight Plastic Hat",
+                            "description": "Chuck Norris' programs occupy 150% of CPU, even when they are not executing."
+                        }
+                    }
+                ],
+                "vehicle": {
+                    "make": "Toyota",
+                    "model": "X3",
+                    "year": 2013,
+                    "color": "Green",
+                    "licensePlate": "KTF-5276",
+                    "state": "VA"
+                },
+                "emergencyContacts": [
+                    {
+                        "name": "Tyler Bierwirth",
+                        "phone": "290-687-8812",
+                        "email": "tylerbierwirth@gmail.com"
+                    }
+                ],
+                "user": {
+                    "name": "Bear Grylls",
+                    "address": "14153 E Montana St",
+                    "city": "Denver",
+                    "state": "CO",
+                    "zip": 80209,
+                    "phone": "856-392-5610",
+                    "allergies": "Avocado",
+                    "experienceLevel": "advanced",
+                    "birthDate": "1964-11-11",
+                    "weight": 165,
+                    "height": "5ft 11in",
+                    "hairColor": "Brown",
+                    "skinColor": "gold",
+                    "gender": "violet",
+                    "cosarCard": true
+                },
+                "nearbySarTeams": [
+                    {
+                        "teamName": "Mountain Rescue Aspen",
+                        "county": "Pitkin",
+                        "contact": "SAR",
+                        "contactNumber": "970-920-5310",
+                        "city": "Aspen",
+                        "state": "CO"
+                    },
+                    {
+                        "teamName": "Crested Butte SAR",
+                        "county": "Gunnison",
+                        "contact": "SAR",
+                        "contactNumber": "970-596-4704",
+                        "city": "Crested Butte",
+                        "state": "CO"
+                    },
+                    {
+                        "teamName": "Garfield County Search and Rescue",
+                        "county": "Garfield",
+                        "contact": "Sheriff's Office",
+                        "contactNumber": "970-945-0453",
+                        "city": "Glenwood Springs",
+                        "state": "CO"
+                    }
+                ]
+            },
+            {
+                "name": "Ward Group",
+                "startingPoint": "Ward Group",
+                "startDate": "2019-10-30",
+                "startTime": "2019-10-30 15:38:11 UTC",
+                "endingPoint": "Doyle-Auer",
+                "endDate": "2019-10-31",
+                "endTime": "2019-10-30 21:38:11 UTC",
+                "notificationDate": "2019-10-31",
+                "notificationTime": "2019-10-31 01:38:11 UTC",
+                "tripGears": [],
+                "vehicle": null,
+                "emergencyContacts": [],
+                "user": {
+                    "name": "Cheree McLaughlin",
+                    "address": "9305 Angele Fall",
+                    "city": "West Alfredview",
+                    "state": "MO",
+                    "zip": 71382,
+                    "phone": "536.962.6155",
+                    "allergies": "Loquats",
+                    "experienceLevel": "moderate",
+                    "birthDate": "1990-12-22",
+                    "weight": 146,
+                    "height": "5 inches",
+                    "hairColor": "green",
+                    "skinColor": "teal",
+                    "gender": "turquoise",
+                    "cosarCard": false
+                },
+                "nearbySarTeams": []
+            },
+            {
+                "name": "Ward and Sons",
+                "startingPoint": "Ward and Sons",
+                "startDate": "2019-10-30",
+                "startTime": "2019-10-30 15:38:11 UTC",
+                "endingPoint": "Lindgren-Lind",
+                "endDate": "2019-10-31",
+                "endTime": "2019-10-30 21:38:11 UTC",
+                "notificationDate": "2019-10-31",
+                "notificationTime": "2019-10-31 01:38:11 UTC",
+                "tripGears": [],
+                "vehicle": null,
+                "emergencyContacts": [],
+                "user": {
+                    "name": "Cheree McLaughlin",
+                    "address": "9305 Angele Fall",
+                    "city": "West Alfredview",
+                    "state": "MO",
+                    "zip": 71382,
+                    "phone": "536.962.6155",
+                    "allergies": "Loquats",
+                    "experienceLevel": "moderate",
+                    "birthDate": "1990-12-22",
+                    "weight": 146,
+                    "height": "5 inches",
+                    "hairColor": "green",
+                    "skinColor": "teal",
+                    "gender": "turquoise",
+                    "cosarCard": false
+                },
+                "nearbySarTeams": []
+            }
+        ]
+    }
 }
