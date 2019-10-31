@@ -19,7 +19,15 @@
             "email": "tylerbierwirth@gmail.com"
           }
         ],
-        "tripGears": [],
+        "tripGears": [
+          {
+            "comments": "This is a test",
+            "gear": {
+                "itemName": "Enormous Steel Pants",
+                "description": "Chuck Norris rewrote the Google search engine from scratch."
+                    }
+                  }
+                ],
         "user": {
           "name": "Ronald Gerlach",
           "birthDate": "1991-08-08",
@@ -38,14 +46,32 @@
           "licensePlate": "WDV-8272",
           "state": "DE"
         },
-        "nearbySarTeams": {
-          "teamName": "Alamosa Volunteer Search and Rescue",
-          "county": "Alamosa",
-          "contact": "Sheriff's Office",
-          "contactNumber": "719-589-6608",
-          "city": "Alamosa",
-          "state": "CO"
-        }
+        "nearbySarTeams": [
+          {
+            "teamName": "Mountain Rescue Aspen",
+            "county": "Pitkin",
+            "contact": "SAR",
+            "contactNumber": "970-920-5310",
+            "city": "Aspen",
+            "state": "CO"
+          },
+          {
+            "teamName": "Crested Butte SAR",
+            "county": "Gunnison",
+            "contact": "SAR",
+            "contactNumber": "970-596-4704",
+            "city": "Crested Butte",
+            "state": "CO"
+          },
+          {
+            "teamName": "Garfield County Search and Rescue",
+            "county": "Garfield",
+            "contact": "Sheriff's Office",
+            "contactNumber": "970-945-0453",
+            "city": "Glenwood Springs",
+            "state": "CO"
+          }
+        ]
       },
       {
         "id": "52",
