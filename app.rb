@@ -6,7 +6,6 @@ require './app/controllers/fetcher'
 require './app/controllers/mailer'
 require './app/models/emailed_trip'
 require 'rufus-scheduler'
-require 'net/http'
 
 class App < Sinatra::Base
   scheduler = Rufus::Scheduler.new
