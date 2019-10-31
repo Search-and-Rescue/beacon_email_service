@@ -37,6 +37,14 @@
           "color": "White",
           "licensePlate": "WDV-8272",
           "state": "DE"
+        },
+        "nearbySarTeams": {
+          "teamName": "Alamosa Volunteer Search and Rescue",
+          "county": "Alamosa",
+          "contact": "Sheriff's Office",
+          "contactNumber": "719-589-6608",
+          "city": "Alamosa",
+          "state": "CO"
         }
       },
       {

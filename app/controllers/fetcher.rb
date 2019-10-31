@@ -5,8 +5,7 @@ class Fetcher
   def get_trips
     query = (
       %({
-      activeTrips{
-        id
+        activeTrips{
         name
         startingPoint
         startDate
@@ -16,28 +15,14 @@ class Fetcher
         endTime
         notificationDate
         notificationTime
-        emergencyContacts{
-          name
-          phone
-          email
-        }
         tripGears{
           comments
           gear{
             itemName
+            description
           }
         }
-        user{
-          name
-          birthDate
-          allergies
-          weight
-          height
-          hairColor
-          cosarCard
-          experienceLevel
-        }
-        vehicle{
+        vehicle {
           make
           model
           year
@@ -45,9 +30,39 @@ class Fetcher
           licensePlate
           state
         }
+        emergencyContacts {
+          name
+          phone
+          email
+        }
+        user{
+          name
+          address
+          city
+          state
+          zip
+          phone
+          allergies
+          experienceLevel
+          birthDate
+          weight
+          height
+          hairColor
+          skinColor
+          gender
+          cosarCard
+        }
+        nearbySarTeams {
+          teamName
+          county
+          contact
+          contactNumber
+          city
+          state
+      	}
       }
-    })
-    )
+    }
+  ))
     get_json("?query=#{query}")[:data][:activeTrips]
   end
 
