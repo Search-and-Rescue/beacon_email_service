@@ -1,4 +1,4 @@
-<h2> Dear <%= @contact[:name] %> </h2>,
+<h2>Dear <%= @contact[:name] %>,</h2>
 
 <h3><%= @trip[:user][:name] %> started their <%= @trip[:name] %> trip on <%= @trip[:startDate] %> at <%= @trip[:startTime] %> and has not checked in.</h3>
 
@@ -6,18 +6,18 @@
 
 <p>Trip starting point: <%= @trip[:startingPoint]%></p>
 <p>Trip ending point: <%= @trip[:endingPoint]%></p>
-
 <p>Number of traveling companions: <%= @trip[:travelingCompanions] %></p>
 
-<p>Gear:</p>
+<p><strong>Gear:</strong></p>
 <% @trip[:tripGears].each do |gear| %>
   <ul>
     <li><%= gear[:gear][:itemName] %></li>
+    <li><%= gear[:gear][:description] %></li>
     <li><%= gear[:comments] %></li>
   </ul>
 <% end %>
 
-<p>Vehicle description:</p>
+<p><strong>Vehicle description:</strong></p>
 <ul>
   <li><%= @trip[:vehicle][:make] %></li>
   <li><%= @trip[:vehicle][:model] %></li>
@@ -26,34 +26,33 @@
   <li><%= @trip[:vehicle][:licensePlate] %></li>
   <li><%= @trip[:vehicle][:state] %></li>
 </ul>
-<%= @trip[:vehicle] %>
 
-<p>Physical description:</p>
+<p><strong>Physical description:</strong></p>
 <ul>
-  <%= @trip[:user][:name] %>
-  <%= @trip[:user][:phone] %>
-  <%= @trip[:user][:address] %>
-  <%= @trip[:user][:city] %>
-  <%= @trip[:user][:state] %>
-  <%= @trip[:user][:zip] %>
-  <%= @trip[:user][:birthDate] %>
-  <%= @trip[:user][:weight] %>
-  <%= @trip[:user][:height] %>
-  <%= @trip[:user][:hairColor] %>
-  <%= @trip[:user][:skinColor] %>
-  <%= @trip[:user][:gender] %>
-  <%= @trip[:user][:cosarCard] %>
-  <%= @trip[:user][:experienceLevel] %>
+  <li>Name: <%= @trip[:user][:name] %></li>
+  <li>Phone: <%= @trip[:user][:phone] %></li>
+  <li>Address: <%= @trip[:user][:address] %></li>
+  <li>City: <%= @trip[:user][:city] %></li>
+  <li>State: <%= @trip[:user][:state] %></li>
+  <li>Zip: <%= @trip[:user][:zip] %></li>
+  <li>Birth Date: <%= @trip[:user][:birthDate] %></li>
+  <li>Weight: <%= @trip[:user][:weight] %></li>
+  <li>Height: <%= @trip[:user][:height] %></li>
+  <li>Hair Color: <%= @trip[:user][:hairColor] %></li>
+  <li>Skin Color: <%= @trip[:user][:skinColor] %></li>
+  <li>Gender: <%= @trip[:user][:gender] %></li>
+  <li>COSAR Card: <%= @trip[:user][:cosarCard] %></li>
+  <li>Experience Level: <%= @trip[:user][:experienceLevel] %></li>
 </ul>
 
 Please contact a nearby search and rescue team below:
 <% @trip[:nearbySarTeams].each do |team| %>
   <ul>
-    <li><strong><%= team[:teamName] %></strong></li>
-    <li><%= team[:contact] %></li>
-    <li><%= team[:contactNumber] %></li>
-    <li><%= team[:city] %></li>
-    <li><%= team[:state] %></li>
-    <li><%= team[:county] %></li>
+    <li><strong>Team: <%= team[:teamName] %></strong></li>
+    <li>Contact: <%= team[:contact] %></li>
+    <li>Contact Number: <%= team[:contactNumber] %></li>
+    <li>City: <%= team[:city] %></li>
+    <li>State: <%= team[:state] %></li>
+    <li>County: <%= team[:county] %></li>
   </ul>
 <% end %>

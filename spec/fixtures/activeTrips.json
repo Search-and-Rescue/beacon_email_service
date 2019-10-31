@@ -2,6 +2,7 @@
     "data": {
         "activeTrips": [
             {
+                "id": "1",
                 "name": "4 Pass Loop",
                 "startingPoint": "Maroon Snowmass Trailhead",
                 "startDate": "2019-10-30",
@@ -11,6 +12,7 @@
                 "endTime": "2019-10-30 21:38:06 UTC",
                 "notificationDate": "2019-10-31",
                 "notificationTime": "2019-10-31 01:38:06 UTC",
+                "travelingCompanions": 0,
                 "tripGears": [
                     {
                         "comments": "Chuck Norris can't test for equality because he has no equal.",
@@ -150,6 +152,7 @@
                 ]
             },
             {
+                "id": "52",
                 "name": "Ward Group",
                 "startingPoint": "Ward Group",
                 "startDate": "2019-10-30",
@@ -159,6 +162,7 @@
                 "endTime": "2019-10-30 21:38:11 UTC",
                 "notificationDate": "2019-10-31",
                 "notificationTime": "2019-10-31 01:38:11 UTC",
+                "travelingCompanions": 2,
                 "tripGears": [],
                 "vehicle": null,
                 "emergencyContacts": [],
@@ -182,6 +186,7 @@
                 "nearbySarTeams": []
             },
             {
+                "id": "53",
                 "name": "Ward and Sons",
                 "startingPoint": "Ward and Sons",
                 "startDate": "2019-10-30",
@@ -191,6 +196,7 @@
                 "endTime": "2019-10-30 21:38:11 UTC",
                 "notificationDate": "2019-10-31",
                 "notificationTime": "2019-10-31 01:38:11 UTC",
+                "travelingCompanions": 2,
                 "tripGears": [],
                 "vehicle": null,
                 "emergencyContacts": [],
