@@ -9,19 +9,16 @@ require 'rufus-scheduler'
 
 class App < Sinatra::Base
   scheduler = Rufus::Scheduler.new
-  def check_trips
+  scheduler.every '30s' do
     fetcher = Fetcher.new
     ActiveRecord::Base.connection_pool.with_connection do
       fetcher.get_trips.each do |trip|
         unless EmailedTrip.exists?(trip_id: trip[:id])
+          puts "Emailing #{trip[:user][:name]}'s contact(s) for #{trip[:name]}"
           EmailedTrip.create(trip_id: trip[:id])
           Mailer.notify(trip).deliver_now
         end
       end
     end
-  end
-
-  scheduler.every '30s' do
-    check_trips
   end
 end
