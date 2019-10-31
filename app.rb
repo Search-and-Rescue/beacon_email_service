@@ -14,7 +14,6 @@ class App < Sinatra::Base
     ActiveRecord::Base.connection_pool.with_connection do
       fetcher.get_trips.each do |trip|
         unless EmailedTrip.exists?(trip_id: trip[:id])
-          print "Emailing #{trip[:user][:name]}'s contact(s) for #{trip[:name]}"
           EmailedTrip.create(trip_id: trip[:id])
           Mailer.notify(trip).deliver_now
         end
