@@ -8,10 +8,9 @@ require './app/models/emailed_trip'
 require 'rufus-scheduler'
 
 class App < Sinatra::Base
-  fetcher = Fetcher.new
   scheduler = Rufus::Scheduler.new
-
-  scheduler.every '30s' do
+  def check_trips
+    fetcher = Fetcher.new
     ActiveRecord::Base.connection_pool.with_connection do
       fetcher.get_trips.each do |trip|
         unless EmailedTrip.exists?(trip_id: trip[:id])
@@ -20,5 +19,9 @@ class App < Sinatra::Base
         end
       end
     end
+  end
+
+  scheduler.every '30s' do
+    check_trips
   end
 end
