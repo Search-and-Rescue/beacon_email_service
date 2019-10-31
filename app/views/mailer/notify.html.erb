@@ -16,4 +16,11 @@ Vehicle description: <%= @trip[:vehicle] %>
 Physical description: <%= @trip[:user] %>
 
 Please contact a nearby search and rescue team below:
-<%= @trip[:nearbySarTeams] %>
+<% @trip[:nearbySarTeams].each do |team| %>
+  Team: <%= team[:teamName]%>
+  Contact: <%= team[:contact] %>
+  Phone Number: <%= team[:contactNumber] %>
+  City: <%= team[:city] %>
+  State: <%= team[:state] %>
+  County: <%= team[:county] %>
+<% end %>
