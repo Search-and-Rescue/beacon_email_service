@@ -17,6 +17,5 @@ production:
   encoding: unicode
   database: beacon_email_service_production
   pool: 5
-  port: <%= ENV['PORT'] %>
   host: <%= ENV['DATABASE_HOST'] %>
   database: <%= ENV['DATABASE_URL'] %>
